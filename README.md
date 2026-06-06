@@ -44,7 +44,7 @@ Mouse can only appear after 1 minute in game (so it eases the player to the cont
 Goal: Fully playable Snake game in terminal.
 
 * [x] Snake movement system
-* [x] Direction handling (WASD)
+* [] Direction handling (WASD)
 * [x] Food spawning (random, grid-based)
 * [x] Score system
 * [x] Wall collision detection
