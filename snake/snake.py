@@ -1,5 +1,3 @@
-
-
 class Snake:
 
     def __init__(self, start_position=(5, 5)):

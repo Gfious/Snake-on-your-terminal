@@ -1,5 +1,4 @@
 # Configuration file for the Snake game
-
 WIDTH = 20
 HEIGHT = 20
 
