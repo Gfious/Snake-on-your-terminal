@@ -38,7 +38,7 @@ class Game:
             self.score += 1
             self.snake.grow()
             self.food.spawn(self.board, self.snake.body)
-        pass
+        
 
     def check_collisions(self):
         head_x, head_y = self.snake.head()
@@ -47,7 +47,7 @@ class Game:
             self.game_over()
         if head_y < 0 or head_y >= HEIGHT:
             self.game_over()
-        #TODO: self collision and maybe food collision
+        #TODO: self collision
         
 
     def game_over(self):
