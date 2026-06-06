@@ -9,8 +9,6 @@ class Food:
         """
         Place food in a random location NOT occupied by the snake.
         """
-
-        # TODO:
         # 1. generate random position
         # 2. check it's not inside snake_body
         while True:

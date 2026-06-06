@@ -35,6 +35,8 @@ Mouse can only appear after 1 minute in game (so it eases the player to the cont
     120s → more mice can spawn
     180s → dropping chance increases
     240s → powerups appear more frequently
+Different ai's for the enemies: Passive and escapist mouse and aggressive when cornered rat
+Mongoose timed event (mongoose will hunt the snake, poison only slows it down)
 
 # Road map
 
