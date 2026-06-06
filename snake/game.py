@@ -13,7 +13,7 @@ class Game:
         self.snake = Snake()
         self.food = Food()
         self.walls = Walls()
-        self.walls.generate_border(WIDTH, HEIGHT)
+        self.walls.generate(WIDTH, HEIGHT)
 
         self.score = 0
         self.state = RUNNING

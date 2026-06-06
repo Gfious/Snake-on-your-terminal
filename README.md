@@ -82,9 +82,9 @@ Goal: Turn debug output into a real game view.
 
 Goal: Add structure to the environment.
 
-* [ ] Static wall generation
-* [ ] Randomized map layouts (basic rules)
-* [ ] Collision with walls integrated into game logic
+* [x] Static wall generation
+* [x] Randomized map layouts (basic rules)
+* [x] Collision with walls integrated into game logic
 
 ---
 
