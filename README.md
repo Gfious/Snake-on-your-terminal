@@ -15,7 +15,7 @@ Mouse will flee the snake and eat fruits
 Mouse will see all the fruits, but only can see snake in a determined range
 Mouse will can have power-ups (range will be vision range as opposed to poison spit by the snake)
 Snake droppings have a probability of happening, which will make the mouse run
-Mouse droppings are toxic to the snake
+Mouse droppings are toxic to the snake (reduce snake speed and decrements score)
 Mouse path for food and snake/snake droppings escape
 Snake can poison the mouse
 Snake can poison the fruits
@@ -29,3 +29,9 @@ Mouse has a probability of 30% to spawn every 60 seconds
 There can be only 3 mice on the screen at once
 Power-ups have a 10 seconds active time (stacked 4 times)
 Poison spitting speed will be 2x snake speed
+Game penalties will scale over time
+Mouse can only appear after 1 minute in game (so it eases the player to the controls and mechanics)
+    60s → mice unlock
+    120s → more mice can spawn
+    180s → dropping chance increases
+    240s → powerups appear more frequently
