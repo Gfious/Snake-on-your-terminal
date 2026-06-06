@@ -1,3 +1,5 @@
+from config import INITIAL_SNAKE_LENGTH
+
 class Snake:
 
     def __init__(self, start_position=(5, 5)):
@@ -5,7 +7,7 @@ class Snake:
         body: list of (x, y)
         direction: current movement vector
         """
-        self.body = [start_position]
+        self.body = [(5, 5), (4, 5), (3, 5)]
         self.direction = (1, 0)                                                         # Moving right initially
         self.growth = 0 # number of segments to grow
     def set_direction(self, new_direction):

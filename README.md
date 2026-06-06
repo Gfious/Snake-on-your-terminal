@@ -60,7 +60,7 @@ Goal: Fully playable Snake game in terminal.
 Goal: Make the game feel like real Snake.
 
 * [x] Snake growth system
-* [ ] Self-collision detection
+* [x] Self-collision detection
 * [x] Prevent instant reverse direction (anti-suicide rule)
 * [x] Improved input handling (non-blocking if possible)
 
@@ -70,11 +70,11 @@ Goal: Make the game feel like real Snake.
 
 Goal: Turn debug output into a real game view.
 
-* [ ] Grid-based rendering (board visualization)
-* [ ] Snake body rendering (ASCII representation)
-* [ ] Food rendering as symbol (*)
-* [ ] Optional: borders / walls display
-* [ ] Clear-screen rendering per frame
+* [x] Grid-based rendering (board visualization)
+* [x] Snake body rendering (ASCII representation)
+* [x] Food rendering as symbol (*)
+* [x] Optional: borders / walls display
+* [x] Clear-screen rendering per frame
 
 ---
 
