@@ -51,7 +51,10 @@ class Game:
             self.game_over()
         if head_y < 0 or head_y >= HEIGHT:
             self.game_over()
-        #TODO: self collision
+
+        if self.snake.hits_self():
+            self.game_over()
+        
         
 
     def game_over(self):

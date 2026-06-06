@@ -46,7 +46,7 @@ Mongoose timed event (mongoose will hunt the snake, poison only slows it down)
 Goal: Fully playable Snake game in terminal.
 
 * [x] Snake movement system
-* [] Direction handling (WASD)
+* [x] Direction handling (WASD)
 * [x] Food spawning (random, grid-based)
 * [x] Score system
 * [x] Wall collision detection
@@ -59,10 +59,10 @@ Goal: Fully playable Snake game in terminal.
 
 Goal: Make the game feel like real Snake.
 
-* [ ] Snake growth system
+* [x] Snake growth system
 * [ ] Self-collision detection
-* [ ] Prevent instant reverse direction (anti-suicide rule)
-* [ ] Improved input handling (non-blocking if possible)
+* [x] Prevent instant reverse direction (anti-suicide rule)
+* [x] Improved input handling (non-blocking if possible)
 
 ---
 

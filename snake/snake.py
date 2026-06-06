@@ -44,8 +44,7 @@ class Snake:
         """
         Return True if head collides with body.
         """
-        head = self.body[0]
-        return head in self.body[1:]
+        return self.head() in self.body[1:]
     
     def set_direction(self, new_direction):
         dx, dy = self.direction
