@@ -4,6 +4,7 @@ from board import Board
 from config import WIDTH, HEIGHT, RUNNING, GAME_OVER, EXIT
 from input_handler import get_direction
 from walls import *
+from mapgenerator import *
 
 
 class Game:
@@ -13,7 +14,8 @@ class Game:
         self.snake = Snake()
         self.food = Food()
         self.walls = Walls()
-        self.walls.generate(WIDTH, HEIGHT)
+        self.generator = MapGenerator()
+        self.generator.generate(self.walls)
 
         self.score = 0
         self.state = RUNNING
