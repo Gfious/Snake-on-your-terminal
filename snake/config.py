@@ -35,6 +35,8 @@ RUINS = {
     "L": [(0, 0), (0, 1), (0, 2), (1, 2)]
 }
 
+VISION_RANGE = 6
+
 RUNNING = "RUNNING"
 GAME_OVER = "GAME_OVER"
 EXIT = "EXIT"

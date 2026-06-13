@@ -37,7 +37,7 @@ class Game:
             self.snake.set_direction(direction)
         
     def mouse_ate_food(self):
-        self.food.spawn(self.walls. self.snake.body)
+        self.food.spawn(self.walls, self.snake.body)
 
     def update(self):
         """
@@ -47,7 +47,7 @@ class Game:
         3. check food
         """
         self.snake.move()
-        self.mouse.move(self.walls)
+        self.mouse.move(self.walls, self.snake.head(), self.food.position)
         self.check_collisions()
         if self.snake.head() == self.food.position:
             self.score += 1
