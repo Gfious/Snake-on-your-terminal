@@ -1,6 +1,7 @@
 from snake import Snake
 from food import Food
 from board import Board
+from mouse import Mouse
 from config import WIDTH, HEIGHT, RUNNING, GAME_OVER, EXIT
 from input_handler import get_direction
 from walls import *
@@ -12,10 +13,12 @@ class Game:
     def __init__(self):
         self.board = Board(WIDTH, HEIGHT)
         self.snake = Snake()
-        self.food = Food()
         self.walls = Walls()
         self.generator = MapGenerator()
-        self.generator.generate(self.walls)
+        self.generator.generate(self.walls, self.snake.head())
+        self.food = Food()
+        self.mouse = Mouse(self.walls)
+        self.mouse.spawn(self.walls)
 
         self.score = 0
         self.state = RUNNING
@@ -33,6 +36,8 @@ class Game:
         if direction is not None:
             self.snake.set_direction(direction)
         
+    def mouse_ate_food(self):
+        self.food.spawn(self.walls. self.snake.body)
 
     def update(self):
         """
@@ -42,11 +47,20 @@ class Game:
         3. check food
         """
         self.snake.move()
+        self.mouse.move(self.walls)
         self.check_collisions()
         if self.snake.head() == self.food.position:
             self.score += 1
             self.snake.grow()
             self.food.spawn(self.walls, self.snake.body)
+
+        if self.snake.head() == self.mouse.position:
+            self.score += 5
+            self.snake.grow()
+            self.mouse.spawn(self.walls)
+
+        if self.mouse.position == self.food.position:
+            self.mouse_ate_food()
         
 
     def check_collisions(self):
@@ -72,6 +86,12 @@ class Game:
         # draw food
         fx, fy = self.food.position
         grid[fy][fx] = "*"
+
+        # Draw mouse
+        mx, my = self.mouse.position
+        if 0 <= mx < WIDTH and 0 <= my < HEIGHT:
+            grid[my][mx] = "m"
+        
 
         # draw snake
         for i, (x, y) in enumerate(self.snake.body):
