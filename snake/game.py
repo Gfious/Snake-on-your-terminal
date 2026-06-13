@@ -85,12 +85,12 @@ class Game:
         
         # draw food
         fx, fy = self.food.position
-        grid[fy][fx] = "*"
+        grid[fy][fx] = "+"
 
         # Draw mouse
         mx, my = self.mouse.position
         if 0 <= mx < WIDTH and 0 <= my < HEIGHT:
-            grid[my][mx] = "m"
+            grid[my][mx] = "r"
         
 
         # draw snake
